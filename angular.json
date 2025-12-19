@@ -73,11 +73,6 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
-            },
-            "hmr": {
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
@@ -90,10 +85,6 @@
             },
             "development": {
               "buildTarget": "html-css-playground:build:development"
-            },
-            "hmr": {
-              "buildTarget": "html-css-playground:build:hmr",
-              "hmr": true
             }
           },
           "defaultConfiguration": "development"
