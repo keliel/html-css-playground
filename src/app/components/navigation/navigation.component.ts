@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'app-navigation',
+  selector: 'pg-navigation',
   imports: [RouterLink, RouterLinkActive],
-  templateUrl: './navigation.html',
-  styleUrl: './navigation.css',
+  templateUrl: './navigation.component.html',
+  styleUrl: './navigation.component.css',
 })
-export class Navigation {
+export class NavigationComponent {
 
 }

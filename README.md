@@ -38,13 +38,3 @@ npm run build
 ```
 
 The build artifacts will be stored in the `dist/` directory.
-
-## Project Structure
-
-The application consists of multiple pages demonstrating different HTML and CSS coding topics:
-
-- **Home Page**: Landing page with an overview
-- **HTML Topic Page**: Dedicated to HTML coding examples
-- **CSS Topic Page**: Dedicated to CSS coding examples
-
-Use the navigation menu at the top to switch between different pages.

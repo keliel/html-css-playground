@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { Home } from './pages/home/home';
-import { HtmlTopic } from './pages/html-topic/html-topic';
-import { CssTopic } from './pages/css-topic/css-topic';
+import { HomeComponent } from './pages/home/home.component';
+import { HtmlTopicComponent } from './pages/html-topic/html-topic.component';
+import { CssTopicComponent } from './pages/css-topic/css-topic.component';
 
 export const routes: Routes = [
-  { path: '', component: Home },
-  { path: 'html-topic', component: HtmlTopic },
-  { path: 'css-topic', component: CssTopic }
+  { path: '', component: HomeComponent },
+  { path: 'html-topic', component: HtmlTopicComponent },
+  { path: 'css-topic', component: CssTopicComponent }
 ];
