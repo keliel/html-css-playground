@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+}
+
+pg-navigation {
+  flex-shrink: 0;
+}
+
+main {
+  flex-grow: 1;
+}
