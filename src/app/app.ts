@@ -9,5 +9,4 @@ import { Navigation } from './components/navigation/navigation';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = 'HTML & CSS Playground';
 }
