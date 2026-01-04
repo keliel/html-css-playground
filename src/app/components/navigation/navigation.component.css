@@ -2,7 +2,7 @@ nav {
   display: flex;
   gap: var(--pg-nav-gap, var(--pg-space-m));
   backdrop-filter: blur(var(--pg-nav-blur, 5px));
-  color: var(--pg-nav-color, var(--pg-grey-800));
+  color: var(--pg-nav-color, var(--pg-grey-900));
 }
 
 nav a {
@@ -11,8 +11,8 @@ nav a {
   padding-inline: var(--pg-nav-link-padding-inline, var(--pg-space-m));
   padding-block: var(--pg-nav-link-padding-block, var(--pg-space-s));
   border-radius: var(--pg-nav-link-rounding, var(--pg-rounding-m));
-  background-color: var(--pg-nav-link-bg, transparent);
-  transition: background-color color 0.3s;
+  background-color: var(--pg-nav-link-bg, var(--pg-grey-300));
+  transition: background-color 0.3s, color 0.4s;
 }
 
 nav a:hover,
