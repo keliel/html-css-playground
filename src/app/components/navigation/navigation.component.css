@@ -2,6 +2,7 @@ nav {
   display: flex;
   gap: var(--pg-nav-gap, var(--pg-space-m));
   backdrop-filter: blur(var(--pg-nav-blur, 5px));
+  background-color: var(--pg-nav-bg, color-mix(in srgb, var(--pg-surface) 80%, transparent));
   color: var(--pg-nav-color, var(--pg-grey-900));
 }
 
