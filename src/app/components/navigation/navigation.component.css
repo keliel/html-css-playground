@@ -23,4 +23,5 @@ nav a:focus-visible {
 
 nav a.active {
   background-color: var(--pg-nav-link-bg-pressed, var(--pg-blueish-500));
+  color: var(--pg-nav-link-color-pressed, var(--pg-grey-50));
 }
