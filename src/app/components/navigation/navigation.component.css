@@ -3,6 +3,7 @@ nav {
   gap: var(--pg-nav-gap, var(--pg-space-m));
   backdrop-filter: blur(var(--pg-nav-blur, 5px));
   color: var(--pg-nav-color, var(--pg-grey-900));
+  padding: var(--pg-nav-padding, var(--pg-space-s));
 }
 
 nav a {
