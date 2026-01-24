@@ -13,7 +13,7 @@ nav a {
   padding-block: var(--pg-nav-link-padding-block, var(--pg-space-s));
   border-radius: var(--pg-nav-link-rounding, var(--pg-rounding-m));
   background-color: var(--pg-nav-link-bg, var(--pg-grey-300));
-  transition: background-color 0.3s, color 0.4s;
+  transition: background-color 0.3s;
 }
 
 nav a:hover,
