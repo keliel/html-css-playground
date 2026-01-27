@@ -7,14 +7,6 @@ html {
   font-size: 16px;
 }
 
-body {
-  background-color: var(--pg-surface);
-  color: var(--pg-on-surface);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.2;
-}
-
 :root {
   --pg-grey-0: #ffffff;
   --pg-grey-50: #fafafa;
@@ -44,4 +36,12 @@ body {
 
   --pg-surface: var(--pg-grey-0);
   --pg-on-surface: var(--pg-grey-800);
+}
+
+body {
+  background-color: var(--pg-surface);
+  color: var(--pg-on-surface);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.2;
 }
