@@ -1,23 +1,28 @@
 nav {
   display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  background-color: #333;
-  color: white;
+  gap: var(--pg-nav-gap, var(--pg-space-m));
+  backdrop-filter: blur(var(--pg-nav-blur, 5px));
+  background-color: var(--pg-nav-bg, color-mix(in srgb, var(--pg-surface) 80%, transparent));
+  color: var(--pg-nav-color, var(--pg-grey-900));
+  padding: var(--pg-nav-padding, var(--pg-space-s));
 }
 
 nav a {
   color: inherit;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  padding-inline: var(--pg-nav-link-padding-inline, var(--pg-space-m));
+  padding-block: var(--pg-nav-link-padding-block, var(--pg-space-s));
+  border-radius: var(--pg-nav-link-rounding, var(--pg-rounding-m));
+  background-color: var(--pg-nav-link-bg, var(--pg-grey-300));
   transition: background-color 0.3s;
 }
 
-nav a:hover {
-  background-color: #555;
+nav a:hover,
+nav a:focus-visible {
+  background-color: var(--pg-nav-link-bg-hover, var(--pg-grey-400));
 }
 
 nav a.active {
-  background-color: #007bff;
+  background-color: var(--pg-nav-link-bg-pressed, var(--pg-bluish-600));
+  color: var(--pg-nav-link-color-pressed, var(--pg-grey-0));
 }
