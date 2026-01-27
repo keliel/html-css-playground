@@ -39,5 +39,8 @@ body {
   --pg-rounding-l: 8px;
   --pg-rounding-full: 9999px;
 
-  background-color: var(--pg-grey-0);
+  --pg-surface: var(--pg-grey-0);
+  --pg-on-surface: var(--pg-grey-800);
+
+  background-color: var(--pg-surface);
 }
