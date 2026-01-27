@@ -43,4 +43,5 @@ body {
   --pg-on-surface: var(--pg-grey-800);
 
   background-color: var(--pg-surface);
+  color: var(--pg-on-surface);
 }
