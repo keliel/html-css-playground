@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './accordion.component.css',
 })
 export class AccordionComponent {
+  protected readonly accordionId = `accordion-${Math.random().toString(36).substring(2, 11)}`;
+
   protected panels = [
     {
       title: 'Item One',
