@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+let accordionIdCounter = 0;
+
 @Component({
   selector: 'pg-accordion',
   imports: [],
@@ -7,6 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './accordion.component.css',
 })
 export class AccordionComponent {
+  protected readonly accordionId = `accordion-${accordionIdCounter++}`;
+
   protected panels = [
     {
       title: 'Item One',

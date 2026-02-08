@@ -1,6 +1,6 @@
 <h2>Accordion</h2>
 @for (panel of panels; track panel) {
-<details name="accordion">
+<details [attr.name]="accordionId">
   <summary>{{ panel.title }}</summary>
   <div>
   @for (contentPiece of panel.content; track contentPiece) {
