@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AccordionComponent } from './accordion/accordion/accordion.component';
+import { AccordionComponent } from './accordion/accordion.component';
 
 @Component({
   selector: 'pg-html-topic',
