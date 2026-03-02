@@ -1,11 +1,11 @@
 <h2>Tooltips</h2>
 @for (tip of tooltips; track tip.id) {
-<div id="{{ tip.id }}" popover="hint">{{ tip.content }}</div>
+<div class="tooltip" id="{{ tip.id }}" popover="hint">{{ tip.content }}</div>
 }
 <section>
   <h3>Ideal future using `interestfor` attribute</h3>
   @for (tip of tooltips; track tip.id) {
-  <a href="#" [attr.interestfor]="tip.id">{{ tip.text }}</a>
+  <a href="#" (click)="$event.preventDefault()" [attr.interestfor]="tip.id">{{ tip.text }}</a>
   }
 </section>
 

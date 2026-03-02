@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './popover-tooltip.component.css',
 })
 export class PopoverTooltipComponent {
-  protected readonly accordionId = `accordion-${Math.random().toString(36).substring(2, 11)}`;
-
   protected tooltips = [
     {
       id: this.generateTooltipId(),
@@ -28,6 +26,6 @@ export class PopoverTooltipComponent {
   ];
 
   private generateTooltipId(): string {
-    return`tooltip-${Math.random().toString(36).substring(2, 11)}`;
+    return `tooltip-${Math.random().toString(36).substring(2, 11)}`;
   }
 }

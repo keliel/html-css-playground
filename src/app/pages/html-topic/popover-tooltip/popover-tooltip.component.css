@@ -1,16 +1,20 @@
-[popover="hint"] {
-  inset: unset;
-  position: absolute;
-  position-area: bottom;
-  top: var(--pg-space-xs);
-  justify-self: anchor-center;
+.tooltip {
+  inset:unset;
   max-width: min(90vw, 15rem);
+  margin: 0;
   padding: var(--pg-space-s);
   border: none;
   border-radius: var(--pg-rounding-m);
   background-color: var(--pg-on-surface);
   box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2);
   color: var(--pg-surface);
+}
+
+[popover="hint"] {
+  position: absolute;
+  position-area: bottom;
+  top: var(--pg-space-xs);
+  justify-self: anchor-center;
 }
 
 [interestfor] {
