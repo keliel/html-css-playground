@@ -1,5 +1,5 @@
 .tooltip {
-  inset:unset;
+  inset: unset;
   max-width: min(90vw, 15rem);
   margin: 0;
   padding: var(--pg-space-s);
