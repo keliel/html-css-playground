@@ -12,6 +12,6 @@
 <section>
   <h3>Most supported solution (but would require JS to achieve tooltip other than with click)</h3>
   @for (tip of tooltips; track tip.id) {
-  <button [attr.popovertarget]="tip.id">{{ tip.text }}</button>
+  <button type="button" [attr.popovertarget]="tip.id">{{ tip.text }}</button>
   }
 </section>
