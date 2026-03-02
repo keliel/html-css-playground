@@ -1,0 +1,25 @@
+[popover="hint"] {
+  inset: unset;
+  position: absolute;
+  position-area: bottom;
+  top: var(--pg-space-xs);
+  justify-self: anchor-center;
+  max-width: min(90vw, 15rem);
+  padding: var(--pg-space-s);
+  border: none;
+  border-radius: var(--pg-rounding-m);
+  background-color: var(--pg-on-surface);
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2);
+  color: var(--pg-surface);
+}
+
+[interestfor] {
+  interest-delay: 0.15s;
+}
+
+a,
+button {
+  &:not(:last-child) {
+    margin-inline-end: var(--pg-space-s);
+  }
+}

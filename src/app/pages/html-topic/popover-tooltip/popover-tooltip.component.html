@@ -1,0 +1,17 @@
+<h2>Tooltips</h2>
+@for (tip of tooltips; track tip.id) {
+<div id="{{ tip.id }}" popover="hint">{{ tip.content }}</div>
+}
+<section>
+  <h3>Ideal future using `interestfor` attribute</h3>
+  @for (tip of tooltips; track tip.id) {
+  <a href="#" [attr.interestfor]="tip.id">{{ tip.text }}</a>
+  }
+</section>
+
+<section>
+  <h3>Most supported solution (but would require JS to achieve tooltip other than with click)</h3>
+  @for (tip of tooltips; track tip.id) {
+  <button [attr.popovertarget]="tip.id">{{ tip.text }}</button>
+  }
+</section>
