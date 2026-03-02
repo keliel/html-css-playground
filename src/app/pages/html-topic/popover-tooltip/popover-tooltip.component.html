@@ -1,17 +1,19 @@
 <h2>Tooltips</h2>
 @for (tip of tooltips; track tip.id) {
-<div class="tooltip" id="{{ tip.id }}" popover="hint">{{ tip.content }}</div>
+<div class="tooltip" role="tooltip" id="{{ tip.id }}" popover="hint">{{ tip.content }}</div>
 }
 <section>
   <h3>Ideal future using `interestfor` attribute</h3>
   @for (tip of tooltips; track tip.id) {
-  <a href="#" (click)="$event.preventDefault()" [attr.interestfor]="tip.id">{{ tip.text }}</a>
+  <a href="#" (click)="$event.preventDefault()" [attr.interestfor]="tip.id"
+     [attr.aria-describedby]="tip.id">{{ tip.text }}</a>
   }
 </section>
 
 <section>
   <h3>Most supported solution (but would require JS to achieve tooltip other than with click)</h3>
   @for (tip of tooltips; track tip.id) {
-  <button type="button" [attr.popovertarget]="tip.id">{{ tip.text }}</button>
+  <button type="button" [attr.popovertarget]="tip.id" [attr.aria-describedby]="tip.id">{{ tip.text
+    }}</button>
   }
 </section>
