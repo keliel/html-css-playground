@@ -3,7 +3,7 @@ import { Component, computed, input, signal } from '@angular/core';
 @Component({
   selector: 'pg-dropdownlist',
   imports: [],
-  templateUrl: './dropdownlist.html',
+  templateUrl: './dropdownlist.component.html',
 })
 export class DropdownlistComponent {
 
@@ -41,13 +41,13 @@ export class DropdownlistComponent {
     category: 'Category Four'
   }]);
 
-  protected groupedOptions = computed(() => this.options().reduce<{ category: string; options: ReturnType<typeof this.options> }[]>((g, o) => {
-    const group = g.find(g => g.category === o.category);
+  protected groupedOptions = computed(() => this.options().reduce((groups, currentOption) => {
+    const group = groups.find(g => g.category === currentOption.category);
     if (group) {
-      group.options.push(o);
+      group.options.push(currentOption);
     } else {
-      g.push({ category: o.category, options: [o] });
+      groups.push({ category: currentOption.category, options: [currentOption] });
     }
-    return g;
-  }, []));
+    return groups;
+  }, [] as { category: string; options: ReturnType<typeof this.options> }[]));
 }
