@@ -9,37 +9,18 @@ export class DropdownlistComponent {
 
   public readonly styledLabel = input(false);
 
-  protected options = signal([{
-    text: 'Item One',
-    category: 'Category One'
-  }, {
-    text: 'Item Two',
-    category: 'Category Two'
-  }, {
-    text: 'Item Three',
-    category: 'Category Two'
-  }, {
-    text: 'Item Four',
-    category: 'Category Three'
-  }, {
-    text: 'Item Five',
-    category: 'Category Three'
-  }, {
-    text: 'Item Six',
-    category: 'Category Three'
-  }, {
-    text: 'Item Seven',
-    category: 'Category Four'
-  }, {
-    text: 'Item Eight',
-    category: 'Category Four'
-  }, {
-    text: 'Item Nine',
-    category: 'Category Four'
-  }, {
-    text: 'Item Ten',
-    category: 'Category Four'
-  }]);
+  protected options = signal([
+    { text: 'Item One', category: 'Category One' },
+    { text: 'Item Two', category: 'Category Two' },
+    { text: 'Item Three', category: 'Category Two' },
+    { text: 'Item Four', category: 'Category Three' },
+    { text: 'Item Five', category: 'Category Three' },
+    { text: 'Item Six', category: 'Category Three' },
+    { text: 'Item Seven', category: 'Category Four' },
+    { text: 'Item Eight', category: 'Category Four' },
+    { text: 'Item Nine', category: 'Category Four' },
+    { text: 'Item Ten', category: 'Category Four' },
+  ]);
 
   protected groupedOptions = computed(() => this.options().reduce((groups, currentOption) => {
     const group = groups.find(g => g.category === currentOption.category);

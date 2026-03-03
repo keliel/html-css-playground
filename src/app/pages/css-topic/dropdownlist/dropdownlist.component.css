@@ -38,7 +38,7 @@ pg-dropdownlist select {
     }
   }
 
-  & optgroup label {
+  & optgroup legend {
     position: sticky;
     top: 0;
     width: 100%;
