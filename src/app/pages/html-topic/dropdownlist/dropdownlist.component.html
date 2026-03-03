@@ -10,10 +10,8 @@
 <h3>Grouped Options</h3>
 <select class="grouped">
   @for (group of groupedOptions(); track group) {
-  <optgroup [attr.label]="styledLabel() ? null : group.category">
-    @if (styledLabel()) {
+  <optgroup label="{{ group.category }}">
     <legend>{{ group.category }}</legend>
-    }
     @for (option of group.options; track option) {
     <option>{{ option.text }}</option>
     }

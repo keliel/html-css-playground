@@ -1,4 +1,4 @@
-import { Component, computed, input, signal } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 
 @Component({
   selector: 'pg-dropdownlist',
@@ -6,8 +6,6 @@ import { Component, computed, input, signal } from '@angular/core';
   templateUrl: './dropdownlist.component.html',
 })
 export class DropdownlistComponent {
-
-  public readonly styledLabel = input(false);
 
   protected options = signal([
     { text: 'Item One', category: 'Category One' },
