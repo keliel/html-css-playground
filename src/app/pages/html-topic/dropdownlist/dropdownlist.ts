@@ -4,7 +4,6 @@ import { Component, computed, signal } from '@angular/core';
   selector: 'pg-dropdownlist',
   imports: [],
   templateUrl: './dropdownlist.html',
-  styleUrl: './dropdownlist.css',
 })
 export class DropdownlistComponent {
 
