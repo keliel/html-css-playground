@@ -1,0 +1,51 @@
+pg-dropdownlist select {
+
+  &,
+  &::picker(select) {
+    appearance: base-select;
+
+    background-color: var(--pg-bluish-100);
+    border: none;
+    border-radius: var(--pg-rounding-m);
+  }
+
+
+  & {
+    display: flex;
+    align-items: center;
+    gap: var(--pg-space-m);
+    padding-inline: calc(var(--pg-space-s) * 1.5);
+    padding-block: var(--pg-space-s);
+  }
+
+  &::picker(select) {
+    margin-block-start: var(--pg-space-xs);
+  }
+
+  &::picker-icon {
+    content: '➧';
+    rotate: 90deg;
+    font-size: 1rem;
+  }
+
+  & option {
+    gap: var(--pg-space-m);
+    padding-inline: calc(var(--pg-space-s) * 1.5);
+    padding-block: var(--pg-space-s);
+
+    &::checkmark {
+      font-weight: bold;
+    }
+  }
+
+  & optgroup legend {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: inline-block;
+    padding-inline: calc(var(--pg-space-xs) * 1.5);
+    padding-block: var(--pg-space-xs);
+    background-color: var(--pg-bluish-100);
+    font-size: 0.85em;
+  }
+}

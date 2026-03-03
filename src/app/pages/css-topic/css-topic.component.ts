@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { StyledDropdownlistComponent } from './dropdownlist/dropdownlist.component';
 
 @Component({
   selector: 'pg-css-topic',
-  imports: [],
+  imports: [StyledDropdownlistComponent],
   templateUrl: './css-topic.component.html',
   styleUrl: './css-topic.component.css',
 })
