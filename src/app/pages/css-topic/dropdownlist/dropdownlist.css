@@ -38,12 +38,14 @@ pg-dropdownlist select {
     }
   }
 
-  & optgroup {
-    --pg-dropdownlist-group-label-padding: var(--pg-space-xs);
-    padding-block-start: var(--pg-dropdownlist-group-label-padding);
-
-    & option:first-child {
-      margin-block-start: var(--pg-dropdownlist-group-label-padding);
-    }
+  & optgroup label {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: inline-block;
+    padding-inline: calc(var(--pg-space-xs) * 1.5);
+    padding-block: var(--pg-space-xs);
+    background-color: var(--pg-bluish-100);
+    font-size: 0.85em;
   }
 }
